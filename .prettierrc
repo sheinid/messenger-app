@@ -1,0 +1,6 @@
+{
+	"useTabs": true,
+	"importOrder": ["^@", "^[./]"],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
+}
