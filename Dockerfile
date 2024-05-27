@@ -2,8 +2,8 @@ FROM node:alpine AS deps
 
 RUN apk update && apk add --no-cache && apk add git
 WORKDIR /app
-COPY package.json yarn.lock ./
-RUN yarn install --immutable
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --immutable
 
 # Rebuild source code only when needed
 FROM node:alpine AS builder
